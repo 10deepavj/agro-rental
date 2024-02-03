@@ -1,0 +1,63 @@
+<!Doctype html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-wrapper">
+        <h2>Login</h2>
+        <form action="dataval.php" method="POST">
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <div class="toggle-container">
+            <label for="toggle" class="toggle-label">Show Password:</label>
+            <input type="checkbox" id="toggle" class="toggle-button">
+          </div>
+          <div class="record-container">
+            <button id="record-button" class="record-button">Record Password</button>
+            <button id="stop-button" class="stop-button" disabled>Stop Recording</button>
+          </div>              
+          <script>
+            const toggleButton = document.getElementById('toggle');
+            toggleButton.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            });
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            const recordButton = document.getElementById('record-button');
+            const stopButton = document.getElementById('stop-button');
+            
+            const recognition = new webkitSpeechRecognition();
+            recognition.continuous = true;
+            recognition.interimResults = true;
+            recognition.lang = 'en-US';
+            
+            recordButton.addEventListener('click', () => {
+              recognition.start();
+              recordButton.disabled = true;
+              stopButton.disabled = false;
+            });
+            
+            stopButton.addEventListener('click', () => {
+              recognition.stop();
+              recordButton.disabled = false;
+              stopButton.disabled = true;
+            });
+            
+            recognition.addEventListener('result', event => {
+              const transcript = Array.from(event.results)
+                .map(result => result[0])
+                .map(result => result.transcript)
+                .join('');
+              passwordInput.value = transcript;
+            });
+          </script>
+          <button type="submit">Sign In</button>
+        </form>
+        <p class="signup-option">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p class="login-option"><a href="index.html">Back to Home</a></p>
+      </div>
+    </div>
+  </body>

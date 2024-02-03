@@ -1,0 +1,662 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+   padding: 10px;
+  background-color: transparent;
+  color: #f7f5f5;
+  margin-top: 0px;
+  border-bottom: 1px solid #ccc;
+}
+body{
+  margin: 0%;
+}
+#one{
+      background-image: url('images/bg8.webp');
+			background-size:cover;
+			background-position:center;
+}
+.logo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 60px;
+  width: 500px;
+  margin-left: 30px;
+}
+.logo span{
+  color: #d4ec70;
+} 
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-right: 100px;
+  margin-top: 10px;
+}
+ul{
+  margin-right: 100px; 
+} 
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+nav ul li a {
+  color: #333333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d4ec70;
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* style for sign up  */
+
+.signup-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/bg8.webp');
+	background-size:cover;
+	background-position:center;
+}
+
+.signup-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: bounceIn 1s ease;
+}
+
+.signup-wrapper h2 {
+  margin-top: 0;
+}
+
+.signup-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.signup-wrapper input[type="text"],
+.signup-wrapper input[type="email"],
+.signup-wrapper input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+}
+
+.signup-wrapper input[type="text"]:focus,
+.signup-wrapper input[type="email"]:focus,
+.signup-wrapper input[type="password"]:focus {
+  outline: none;
+  border-bottom: 2px solid #666;
+}
+
+.signup-wrapper button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-wrapper button[type="submit"]:hover {
+  background-color: #666;
+}
+
+.login-option {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-option a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-option a:hover {
+  text-decoration: underline;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* style for login */
+
+.login-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/bg8.webp');
+	background-size:cover;
+	background-position:center;
+}
+
+.login-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: slideIn 1s ease;
+}
+
+.login-wrapper h2 {
+  margin-top: 0;
+}
+
+.login-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-wrapper input[type="email"],
+.login-wrapper input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+}
+
+.login-wrapper input[type="email"]:focus,
+.login-wrapper input[type="password"]:focus {
+  outline: none;
+  border-bottom: 2px solid #666;
+}
+
+.login-wrapper button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-wrapper button[type="submit"]:hover {
+  background-color: #666;
+}
+
+.signup-option {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-option a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-option a:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* style for cards */
+
+.card-container {
+  display: flex; 
+  flex-wrap: wrap; /* allows the cards to wrap to a new line when there's not enough space */
+  justify-content: space-around; /* centers the cards horizontally */
+  padding: 50px;
+}
+
+.card {
+  display: block; /* displays the cards in the same column */
+  width: 300px; /* sets the width of the card */
+  margin: 20px; /* adds some margin between the cards */
+  text-align: center; /* centers the content inside the card */
+  position: relative; /* sets the position to relative for animation */
+}
+
+.card:hover {
+  transform: translateY(-20px); /* moves the card up when hovered */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* adds a box shadow effect */
+  z-index: 1; /* sets the z-index higher to bring the card to the front */
+}
+
+.card img {
+  transition: all 0.3s ease-in-out; /* adds a transition effect to the card image */
+  width: 100%; /* sets the width of the image to 100% */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* scales up the image when hovered */
+}
+
+.harrow{
+  height: 212px;
+}
+.tractor{
+  height: 225px;
+}
+
+/* animated image style */
+
+.image-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  margin-left: 640px;
+}
+
+.rotate-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.rotate-image:hover {
+  transform: rotate(5deg);
+} 
+
+.text{
+  font-size: 70px;
+  text-align: center;
+  color: rgb(255, 254, 254);
+  padding-left: 10px;
+  margin-right: 30px;
+}
+.image1{
+  height: 150px;
+  margin-top: 23px;
+}
+
+#two{
+  background-color: white;
+  display: block;
+}
+
+.image-container1{
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.text1{
+  font-size: 50px;
+  margin-left: 65px;
+  color: rgb(43, 42, 42);
+}
+
+/* contact us style */
+
+#three{
+  background-image:  url('images/trans.png');
+  background-size:cover;
+	background-position:center;
+}
+
+.contact-us-container {
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.contact-us-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+
+.icon{
+  width: 50px;
+  height: 60px;
+  
+  align-items: center;
+}
+.card1{
+  background-color: #b3c2f3;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #E46B2D;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.card2{
+  background-color: #b3c2f3;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #133c5f;
+  color: black;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.card3{
+  background-color: #b3c2f3;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #D4EC70;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.contact{
+  color: #E46B2D;
+}
+h2{
+  font-size: 40px;
+}
+
+/* styles for record */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-container {
+  margin-bottom: 1em;
+}
+.input-label {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+.input-field {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.record-container {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+.record-button {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+.stop-button {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+}
+.toggle-label {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+.toggle-button {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+/* style for selector */
+
+.selector-container {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 1em;
+}
+.selector {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+.selector:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.selector-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+}
+.selector-option {
+  padding: 0.5em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.selector-option:hover {
+  background-color: #f5f5f5;
+}
+.selector-menu.show {
+  display: block;
+}
+
+/* style for owner page */
+
+
+.form-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-image: linear-gradient(to left top, #2cd65e, #00dd86, #00e3a9, #00e8c7, #12ebe0); */
+  background-image: url('images/trans6.jpg');
+	background-size:cover;
+	background-position:center;
+}
+
+.form-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: slideIn 1s ease;
+}
+
+.form-wrapper h2 {
+  margin-top: 0;
+}
+
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-wrapper input[type="file"],
+.form-wrapper input[type="text"],
+.form-wrapper input[type="location"],
+.form-wrapper input[type="number"],
+.form-wrapper label [for="file-input"]{
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+}
+
+.form-wrapper input[type="file"]:focus,
+.form-wrapper input[type="text"]:focus,
+.form-wrapper input[type="location"]:focus,
+.form-wrapper input[type="number"]:focus,
+.form-wrapper label [for="file-input"]:focus{
+  outline: none;
+  border-bottom: 2px solid #666;
+}
+
+.form-wrapper button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-wrapper button[type="submit"]:hover {
+  background-color: #666;
+}
+
+.rotate-image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+  
+}
+.image-container2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.rotate-image1:hover {
+  transform: rotate(5deg);
+} 
+/* .label{
+  font-size: 20px;
+  color: #666;
+} */
+
+
+
+
